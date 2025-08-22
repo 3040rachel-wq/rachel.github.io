@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>גוף האדם</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>גוף האדם</h1>
+  </header>
+
+  <div class="grid">
+    <div class="organ-card" onclick="openModal('פה')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Teeth_by_David_Shankbone.jpg/320px-Teeth_by_David_Shankbone.jpg" alt="פה">
+    </div>
+    <div class="organ-card" onclick="openModal('לוע')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Illu_pharynx.jpg/320px-Illu_pharynx.jpg" alt="לוע">
+    </div>
+    <div class="organ-card" onclick="openModal('וושט')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Esophagus_2.jpg/320px-Esophagus_2.jpg" alt="וושט">
+    </div>
+    <div class="organ-card" onclick="openModal('קיבה')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Stomach_diagram_he.svg/320px-Stomach_diagram_he.svg.png" alt="קיבה">
+    </div>
+    <div class="organ-card" onclick="openModal('מעי דק')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Gray1050.png/320px-Gray1050.png" alt="מעי דק">
+    </div>
+    <div class="organ-card" onclick="openModal('מעי גס')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Gray1223_colon.png/320px-Gray1223_colon.png" alt="מעי גס">
+    </div>
+  </div>
+
+  <div id="organModal" class="modal">
+    <div class="modal-content">
+      <h2 id="organName"></h2>
+      <p id="organDesc"></p>
+      <button class="close-btn" onclick="closeModal()">סגור</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

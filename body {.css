@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffcccc; /* אדום בהיר */
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  color: black;
+  font-size: 32px;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.organ-card {
+  background: #f5f5f5;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.organ-card:hover {
+  transform: scale(1.05);
+  background: #e0e0e0;
+}
+
+.organ-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.modal h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.close-btn {
+  margin-top: 15px;
+  padding: 8px 16px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
